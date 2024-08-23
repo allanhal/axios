@@ -2,36 +2,6 @@ import { useEffect, useState } from 'react'
 import axios from 'axios';
 import './App.css'
 
-interface User {
-  firstname: string;
-}
-
-interface Category {
-  name: string;
-}
-
-interface ProductOptions {
-  shape: "Circle" | "Square"
-}
-
-interface Image {
-  path: string;
-}
-
-interface Produto {
-  name: string;
-  description: string;
-  price: number;
-  images: Image[];
-}
-
-interface Contributors {
-  
-}
-interface Community {
-  contributors: Contributors[]
-}
-
 interface Disco {
   uri: string;
   title: string;
@@ -40,7 +10,6 @@ interface Disco {
   styles: string[];
   blocked_from_sale: boolean;
   id: number;
-  community: Community;
 }
 
 function App() {
